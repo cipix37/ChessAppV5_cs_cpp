@@ -78,7 +78,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\ChessAppV5.3\ChessAppV5\bin\Debug</OutDir>
+    <OutDir>..\ChessAppV5\bin\Debug</OutDir>
     <IntDir />
     <TargetName />
   </PropertyGroup>
@@ -90,7 +90,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\ChessAppV5.3\ChessAppV5\bin\Release</OutDir>
+    <OutDir>..\ChessAppV5\bin\Release</OutDir>
     <IntDir />
     <TargetName />
   </PropertyGroup>

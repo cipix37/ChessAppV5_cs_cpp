@@ -345,7 +345,11 @@ namespace ChessAppV5
                     else t[a, b] = i[7 - a, 7 - b].Piece;
             string s = bmv.verificare_initializare(t, (bool)CheckBoxMove.IsChecked);
             TextBoxAllText.Text += "\n" + s;
-            if (s == "Initializare reusita.\n") TurnChanged(sender, e);
+            if (s == "Initializare reusita.\n")
+            {
+                if ((WhiteFirst && ComboBoxWhiteEvaluation.SelectedIndex != 0) || (!WhiteFirst && ComboBoxBlackEvaluation.SelectedIndex != 0))
+                    TurnChanged(sender, e);
+            }
             else CheckBoxEditMode.IsChecked = true;
         }
 

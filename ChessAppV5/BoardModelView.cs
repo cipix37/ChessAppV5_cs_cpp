@@ -56,28 +56,6 @@ namespace ChessAppV5
             }
             return false;
         }
-        /*metoda veche 
-        using System.Collections.Generic;
-        using System.Linq;
-        using System.Reflection;
-        private List<MethodInfo> EvaluationNames;
-        //atentie metodele sa fie publice in model
-        public string[] GetEvaluationNames()
-        {
-            List<string> MyMethodNames = new List<string>();
-            EvaluationNames = bm.GetType().GetMethods().ToList();
-            EvaluationNames = EvaluationNames.Where(a => a.Name.IndexOf("evaluare") >= 0).ToList();
-            foreach (MethodInfo mi in EvaluationNames)
-                MyMethodNames.Add(mi.Name.Substring(9));
-            return MyMethodNames.ToArray();
-        }
-        //atentie ca nu trebuie evaluare.invoke, inainte era ai.invoke
-        public Mutare ai(int EvaluationIndex, bool Player, bool Dynamic, bool RT)
-        {
-            if (sfarsit == 0)//trebuie aici ca sa nu o scriu in toate din model
-                return (Mutare)EvaluationNames[EvaluationIndex].Invoke(bm, new object[] { Player ? 1 : -1 });
-            return new Mutare(-1, -1, -1, -1, -1);
-        }*/
         public string[] GetEvaluationNames2()
         {
             return new string[] { "Random", "Basic", "Moves[V4.0]", "Position", "Position 2", "Position 3", "Position 4", "Position 5", "Move Position" };

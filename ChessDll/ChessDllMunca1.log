@@ -1,16 +1,20 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(477,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   main.cpp
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.h(67,23): warning C4190: 'lm' has C-linkage specified, but returns UDT 'Mutare' which is incompatible with C
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.h(28): message : see declaration of 'Mutare'
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.h(68,27): warning C4190: 'lm_alb' has C-linkage specified, but returns UDT 'Mutare' which is incompatible with C
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.h(28): message : see declaration of 'Mutare'
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.h(69,29): warning C4190: 'lm_negru' has C-linkage specified, but returns UDT 'Mutare' which is incompatible with C
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.h(28): message : see declaration of 'Mutare'
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.h(70,87): warning C4190: 'AIGeneral' has C-linkage specified, but returns UDT 'Mutare' which is incompatible with C
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.h(28): message : see declaration of 'Mutare'
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.cpp(1186,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.cpp(1191,1): warning C4297: 'AIGeneral': function assumed not to throw an exception but does
-C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessDllMunca1\main.cpp(1191,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1341,5): warning MSB8012: TargetPath(C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessAppV5.3\ChessAppV5\bin\Debug\.dll) does not match the Linker's OutputFile property value (C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessAppV5.3\ChessAppV5\bin\Debug\ChessDllMunca1.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
-     Creating library ..\ChessAppV5.3\ChessAppV5\bin\Debug\ChessDllMunca1.lib and object ..\ChessAppV5.3\ChessAppV5\bin\Debug\ChessDllMunca1.exp
-  ChessDllMunca1.vcxproj -> C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5 all versions\ChessAppV5.3\ChessAppV5\bin\Debug\.dll
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.h(67,23): warning C4190: 'lm' has C-linkage specified, but returns UDT 'Mutare' which is incompatible with C
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.h(28): message : see declaration of 'Mutare'
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.h(68,27): warning C4190: 'lm_alb' has C-linkage specified, but returns UDT 'Mutare' which is incompatible with C
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.h(28): message : see declaration of 'Mutare'
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.h(69,29): warning C4190: 'lm_negru' has C-linkage specified, but returns UDT 'Mutare' which is incompatible with C
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.h(28): message : see declaration of 'Mutare'
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.h(70,87): warning C4190: 'AIGeneral' has C-linkage specified, but returns UDT 'Mutare' which is incompatible with C
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.h(28): message : see declaration of 'Mutare'
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.cpp(1186,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.cpp(1191,1): warning C4297: 'AIGeneral': function assumed not to throw an exception but does
+C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessDll\main.cpp(1191,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1341,5): warning MSB8012: TargetPath(C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessAppV5\bin\Release\.dll) does not match the Linker's OutputFile property value (C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessAppV5\bin\Release\ChessDllMunca1.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library ..\ChessAppV5\bin\Release\ChessDllMunca1.lib and object ..\ChessAppV5\bin\Release\ChessDllMunca1.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 51 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  ChessDllMunca1.vcxproj -> C:\Users\Ciprian\source\repos\ChessApp\ChessAppV5.4 git\ChessAppV5\bin\Release\.dll
