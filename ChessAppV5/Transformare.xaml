@@ -1,0 +1,15 @@
+﻿<Window x:Class="ChessAppV5.Transformare"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChessAppV5"
+        mc:Ignorable="d"
+        Title="Transformare" ResizeMode="NoResize" Width="420" Height="150">
+    <Grid>
+        <Image Height="90" HorizontalAlignment="Left" Margin="12,12,0,0" Name="cal" Stretch="Fill" VerticalAlignment="Top" Width="90" MouseDown="cal_MouseDown" />
+        <Image Height="90" HorizontalAlignment="Left" Margin="108,12,0,0" Name="nebun" Stretch="Fill" VerticalAlignment="Top" Width="90" MouseDown="nebun_MouseDown" />
+        <Image Height="90" HorizontalAlignment="Left" Margin="204,12,0,0" Name="turn" Stretch="Fill" VerticalAlignment="Top" Width="90" MouseDown="turn_MouseDown" />
+        <Image Height="90" HorizontalAlignment="Left" Margin="300,12,0,0" Name="regina" Stretch="Fill" VerticalAlignment="Top" Width="90" MouseDown="regina_MouseDown" />
+    </Grid>
+</Window>

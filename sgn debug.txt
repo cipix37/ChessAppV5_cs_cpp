@@ -1,0 +1,20 @@
+template <typename T> int sgn(T val) {
+    return (T(0) < val) - (val < T(0));
+}//complexitate 8
+
+template <typename T> T sgn(T val) {
+	if(val > 0) return 1;
+	if(val < 0) return -1;
+	return 0;
+}//complexitate 7 - e posibil sa nu se aplice pe zero niciodata, caz in care complexitatea ar fi 4
+
+sgn apare doar in:
+
+void schimbare_inversa(Mutare m) //sgn aici se aplica pe int, si niciodata pe 0
+
+void det_rege(int r, int c, int depth)//sgn aici se aplica pe int, si niciodata pe 0
+
+double evaluare_basic(int depth) //sgn(val) pt evaluare sfarsit - la toate evaluarile, poate fi 0
+
+evaluare sfarsit -> functie separata ca sa nu se repete codul
+saaaau evaluare = evaluare minima(vector valori piese, vector mobilitate piese) si asta include si evaluare sfarsit

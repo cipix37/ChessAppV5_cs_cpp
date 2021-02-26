@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessAppV5", "ChessAppV5\ChessAppV5.csproj", "{9D82CBD5-C4C8-4968-ABB5-81B03F9BB847}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D82CBD5-C4C8-4968-ABB5-81B03F9BB847}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9D82CBD5-C4C8-4968-ABB5-81B03F9BB847}.Debug|x86.Build.0 = Debug|Any CPU
+		{9D82CBD5-C4C8-4968-ABB5-81B03F9BB847}.Release|x86.ActiveCfg = Release|Any CPU
+		{9D82CBD5-C4C8-4968-ABB5-81B03F9BB847}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {206A7C89-1172-4EB8-8D88-9FBF2A343209}
+	EndGlobalSection
+EndGlobal
