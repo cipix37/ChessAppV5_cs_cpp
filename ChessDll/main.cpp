@@ -55,7 +55,7 @@ void schimbare(Mutare m){
     nr_mutari3f++;
     //regula de 50 mutari
     if (abs(t[m.r1][m.c1]) == 1 || t[m.r2][m.c2] != 0 || nr_mutari3f == 0) mutari50[nr_mutari3f] = 1;
-    else mutari50[nr_mutari3f] = mutari50[nr_mutari3f - 1] + 1;
+    else mutari50[nr_mutari3f - 1] += 1;
     //mutare normala
     Mutari3f[nr_mutari3f] = m;
     piese[nr_mutari3f] = t[m.r2][m.c2];
@@ -596,12 +596,12 @@ int DLL_EXPORT verificare_initializare(int tt[][8], int turn) {
 	if (n1 == 1)
 	{
 		b[0] = true;
-		if (!atacat(ra, ca, 1) || turn == 1) b[2] = false;
+		if (!atacat(ra, ca, sgn(t[ra][ca])) || turn == 1) b[2] = false;
 	}
 	if (n2 == 1)
 	{
 		b[1] = true;
-		if (!atacat(rn, cn, -1) || turn == -1) b[3] = false;
+		if (!atacat(rn, cn, sgn(t[rn][cn])) || turn == -1) b[3] = false;
 	}
 	if (b[0] && b[1] && !b[2] && !b[3])
 	{
@@ -1188,16 +1188,16 @@ Mutare DLL_EXPORT AIGeneral(int player, int leaf_depth, int evaluare, bool d, bo
 		RTable = RT;
 		switch (evaluare)
 		{
-		default: { throw "Error! Undefined evaluation function!";}
-		case 1: {evaluare_generala = evaluare_random; break;}
-		case 2: { evaluare_generala = evaluare_basic; break;}
-		case 3: { evaluare_generala = evaluare_moves; break;}
-		case 4: { evaluare_generala = evaluare_position; break;}
-		case 5: { evaluare_generala = evaluare_position2; break;}
-		case 6: { evaluare_generala = evaluare_position3; break;}
-		case 7: { evaluare_generala = evaluare_position4; break;}
-		case 8: { evaluare_generala = evaluare_position5; break;}
-		case 9: { evaluare_generala = evaluare_move_position; break;}
+		    default: { throw "Error! Undefined evaluation function!";}
+		    case 1: {evaluare_generala = evaluare_random; break;}
+		    case 2: { evaluare_generala = evaluare_basic; break;}
+		    case 3: { evaluare_generala = evaluare_moves; break;}
+		    case 4: { evaluare_generala = evaluare_position; break;}
+		    case 5: { evaluare_generala = evaluare_position2; break;}
+		    case 6: { evaluare_generala = evaluare_position3; break;}
+		    case 7: { evaluare_generala = evaluare_position4; break;}
+		    case 8: { evaluare_generala = evaluare_position5; break;}
+		    case 9: { evaluare_generala = evaluare_move_position; break;}
 		}
 		Mutare m1 = alphabeta(-2000, 2000, player, pow(breadth, leaf_depth), 0, leaf_depth);
 		schimbare(m1);

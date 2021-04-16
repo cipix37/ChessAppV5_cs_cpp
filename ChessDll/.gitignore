@@ -3,3 +3,5 @@ Release/
 obj/
 ChessDllMunca1.tlog/
 .vs/
+ChessDllMunca1.log
+ChessDllMunca1.Build.CppClean.log
